@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create ledger</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(204, 212, 228);
+            
+        }
+        .form1{
+            background-color: white;
+            box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.662);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            width:70%;
+            position: absolute;
+        }
+        form{
+        
+            width: 100%;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        input,select,textarea{
+           padding: 10px 20px;
+            width: 100%;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.04);
+           
+        }
+        .top input{
+            padding: 10px 20px;
+            width: 50%;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.04);
+
+        }
+       
+
+        form div{
+            width: 100%;
+        }
+        button{
+            padding: 6px 30px;
+            border-radius: 10px;
+            border: 4px solid rgb(0, 0, 0,0);
+            color: white;
+            background-color: rgb(103, 175, 220);
+        }
+        button:hover{
+            
+            border: 4px solid rgb(103, 175, 220);
+            color: rgb(103, 175, 220);
+            background-color: white;
+        }
+        .top{
+            display: flex; 
+        }
+        .top .left1{
+            width: 100%;
+           
+            border-bottom: 1px solid rgba(128, 128, 128, 0.19);
+            display: flex;
+            flex-direction: column;
+            
+            padding: 30px;
+
+        }
+      
+        .left1 div{
+            width: 50%;
+            
+            padding: 3px 0;
+        }
+        
+        .bottom{
+            display: flex;
+        }
+     
+        .bottom .right2{
+            width: 50%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid rgba(128, 128, 128, 0.19);
+            
+            
+        }
+        .bottom .center{
+            width: 50%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+        }
+        .left2 div,.right2 div,.center div{
+            width: 100%;
+            padding: 3px 0;
+        }
+        .bottom .left2,.bottom .right2,.bottom .center{
+            border-bottom: 1px solid rgba(128, 128, 128, 0.19);
+
+        }
+p{
+    font-size: 13px;
+}
+.enter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.close {
+	position: absolute;
+	top: 3px;
+	right: 8px;
+	font-size: 25px;
+	color: rgb(255, 255, 255);
+	transform: rotate(45deg);
+	cursor: pointer;
+    text-decoration: none;
+	
+}
+.close:hover{
+    color: yellow;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="form1">
+        <a href="javascript:history.go(-1);" class="close">+</a>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 9px 0; width:100%;">Ledger creations</h5>
+        <form action="" method="post">
+        <div class="top">
+            <div class="left1">
+            <div><p>Name</p></div>
+            <input type="text">
+            <div><p>(Alias)</p></div>
+            <input type="text">
+            
+        </div>
+  
+        
+    </div>
+    <div class="bottom">
+        <div class="right2">
+            <div><p>Under</p></div>
+           
+        </div>
+    
+        
+        <div class="center">
+            <h4>Statutory Details</h4>
+                
+
+        </div>
+   
+        
+        
+    </div>
+            
+    <div class="enter"><button><h5>CREATE</h5></button></div>        
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
