@@ -154,7 +154,7 @@ p{
     <div class="container">
     <div class="form1">
         <a href="javascript:history.go(-1);" class="close">+</a>
-        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 9px 0; width:100%;">Ledger creations</h5>
+        <h5 style="background-color:rgb(103, 175, 220) ; color:white; text-align: center; padding: 9px 0; width:100%;">Stock Item creations</h5>
         <form action="" method="post">
         <div class="top">
             <div class="left1">
@@ -170,12 +170,25 @@ p{
     <div class="bottom">
         <div class="right2">
             <div><p>Under</p></div>
+            <select name="under" id="under">
+                <option value="">primary</option>
+                </select>
+            <div><p>Unit</p></div>
+            <select name="unit" id="unit">
+                <option value="">not applicable</option>
+                </select>
            
         </div>
     
         
         <div class="center">
             <h4>Statutory Details</h4>
+            <div><p>GST applicable</p></div>
+            <select name="gst" id="gst">
+                <option value="">applicable</option>
+                <option value="">not applicable</option>
+                <option value="">undefined</option>
+                </select>
                 
 
         </div>
